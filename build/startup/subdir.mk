@@ -1,13 +1,6 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 S_UPPER_SRCS += \
-../startup/startup_stm32f429_439xx.S 
-
-OBJS += \
-./startup/startup_stm32f429_439xx.o 
-
-S_UPPER_DEPS += \
-./startup/startup_stm32f429_439xx.d 
-
+	../startup/startup_stm32f429_439xx.S
 
 # Each subdirectory must supply rules for building sources it contributes
 startup/%.o: ../startup/%.S

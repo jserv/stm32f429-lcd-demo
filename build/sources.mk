@@ -1,7 +1,3 @@
-################################################################################
-# Automatically-generated file. Do not edit!
-################################################################################
-
 ELF_SRCS := 
 O_SRCS := 
 C_SRCS := 
@@ -15,15 +11,14 @@ ASM_DEPS :=
 SECONDARY_FLASH := 
 EXECUTABLES := 
 SECONDARY_LIST := 
-S_UPPER_DEPS := 
+S_UPPER_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-startup \
-lib \
-base \
-User_HandsOn \
-STemWinLibrary522_4x9i/OS \
-STemWinLibrary522_4x9i/Config \
-STM32F4xx_StdPeriph_Driver/src \
-
+	startup \
+	lib \
+	base \
+	User_HandsOn \
+	STemWinLibrary522_4x9i/OS \
+	STemWinLibrary522_4x9i/Config \
+	STM32F4xx_StdPeriph_Driver/src

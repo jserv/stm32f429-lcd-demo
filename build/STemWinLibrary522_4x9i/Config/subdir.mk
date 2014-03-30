@@ -3,15 +3,6 @@ C_SRCS += \
 	../STemWinLibrary522_4x9i/Config/GUIConf.c \
 	../STemWinLibrary522_4x9i/Config/GUIDRV_stm32f429i_discovery.c 
 
-OBJS += \
-./STemWinLibrary522_4x9i/Config/GUIConf.o \
-./STemWinLibrary522_4x9i/Config/GUIDRV_stm32f429i_discovery.o 
-
-C_DEPS += \
-./STemWinLibrary522_4x9i/Config/GUIConf.d \
-./STemWinLibrary522_4x9i/Config/GUIDRV_stm32f429i_discovery.d 
-
-
 # Each subdirectory must supply rules for building sources it contributes
 STemWinLibrary522_4x9i/Config/%.o: ../STemWinLibrary522_4x9i/Config/%.c
 	@echo 'Building file: $<'

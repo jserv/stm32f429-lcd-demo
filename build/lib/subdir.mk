@@ -7,23 +7,6 @@ C_SRCS += \
 	../lib/stm32f429i_discovery_lcd.c \
 	../lib/stm32f429i_discovery_sdram.c 
 
-OBJS += \
-./lib/fonts.o \
-./lib/stm32f429i_discovery.o \
-./lib/stm32f429i_discovery_ioe.o \
-./lib/stm32f429i_discovery_l3gd20.o \
-./lib/stm32f429i_discovery_lcd.o \
-./lib/stm32f429i_discovery_sdram.o 
-
-C_DEPS += \
-./lib/fonts.d \
-./lib/stm32f429i_discovery.d \
-./lib/stm32f429i_discovery_ioe.d \
-./lib/stm32f429i_discovery_l3gd20.d \
-./lib/stm32f429i_discovery_lcd.d \
-./lib/stm32f429i_discovery_sdram.d 
-
-
 # Each subdirectory must supply rules for building sources it contributes
 lib/%.o: ../lib/%.c
 	@echo 'Building file: $<'

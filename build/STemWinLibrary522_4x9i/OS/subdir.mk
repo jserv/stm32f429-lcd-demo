@@ -2,13 +2,6 @@
 C_SRCS += \
 	../STemWinLibrary522_4x9i/OS/GUI_X.c 
 
-OBJS += \
-./STemWinLibrary522_4x9i/OS/GUI_X.o 
-
-C_DEPS += \
-./STemWinLibrary522_4x9i/OS/GUI_X.d 
-
-
 # Each subdirectory must supply rules for building sources it contributes
 STemWinLibrary522_4x9i/OS/%.o: ../STemWinLibrary522_4x9i/OS/%.c
 	@echo 'Building file: $<'

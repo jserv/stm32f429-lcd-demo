@@ -3,15 +3,6 @@ C_SRCS += \
 	../base/syscalls.c \
 	../base/system_stm32f4xx.c 
 
-OBJS += \
-./base/syscalls.o \
-./base/system_stm32f4xx.o 
-
-C_DEPS += \
-./base/syscalls.d \
-./base/system_stm32f4xx.d 
-
-
 # Each subdirectory must supply rules for building sources it contributes
 base/%.o: ../base/%.c
 	@echo 'Building file: $<'

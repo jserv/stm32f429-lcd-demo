@@ -12,6 +12,15 @@ RM := rm -rf
 -include subdir.mk
 -include objects.mk
 
+OBJS += \
+	$(C_SRCS:../%.c=%.o) $(S_UPPER_SRCS:../%.S=%.o)
+
+C_DEPS += \
+	$(C_SRCS:../%.c=%.d)
+
+S_UPPER_DEPS += \
+	$(S_UPPER_SRCS:../%.S=%.d)
+
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C_DEPS)),)
 -include $(C_DEPS)
