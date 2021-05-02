@@ -18,7 +18,7 @@ only be used in accordance with the following terms:
 The software  has been  licensed to  STMicroelectronics  International
 N.V. whose  registered office  is situated at Plan-les-Ouates, Geneva,
 39 Chemin du Champ des Filles,  Switzerland solely for the purposes of
-creating libraries for  STMicroelectronics  ARM Cortex™-M-based 32-bit
+creating libraries for  STMicroelectronics  ARM Cortexâ„¢-M-based 32-bit
 microcontroller    products,    sublicensed    and    distributed   by
 STMicroelectronics  under  the  terms  and  conditions of the End User
 License Agreement supplied with  the software. The use of the software
@@ -68,8 +68,8 @@ File        : main_2D.c
 
 
 
-__IO uint8_t open;
-__IO uint8_t openTimer;
+extern volatile __IO uint8_t open;
+extern volatile __IO uint8_t openTimer;
 
 
 extern volatile unsigned int tamperPushed;
